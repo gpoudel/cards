@@ -1,0 +1,138 @@
+
+
+ body {
+  margin: 40px;
+}
+
+.sidebar {
+  /*grid-area: sidebar;  */
+  margin-top: .5%;   
+  position: relative;  
+  width:27%;
+  height:98%;
+  margin-bottom: 1%;  
+  background-color: #41a499; 
+  float:left;
+}
+
+.content {
+  /*grid-area: content; */
+  margin-top: .5%;   
+  position: relative;  
+  width:72%;
+  height:98%; 
+  margin-bottom: 1%;  
+  margin-right:0.5%;
+  background-color: #f2f2f2;
+  float:left;
+  }
+
+.wrapper {
+  /*display: grid; */
+  background-color: #fff;
+  color: #444;
+  height: 450px;
+  width:1300px;
+}
+
+
+.box {  
+  border-radius: 5px; 
+  font-size: 150%;
+}
+
+.block {  
+  margin-top: 5px; 
+  margin-left: 5px;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 150%; 
+  width:40px;
+ 
+  color: #fff;
+  background-color: #000;
+  float:left;
+}
+.block:hover { background-color: #fff;
+               color: #000;
+               width:40px;
+               font-size: 150%;              
+               }   
+     
+.stage {
+  -webkit-perspective: 2000; 
+   
+  }
+
+
+.flashcard {
+  height: 400px;  
+  width: 700px; 
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid gray; 
+  box-shadow: 2px 2px 2px #000;
+  -webkit-transform-style: preserve-3d;  
+  transition: all 0.3s;               
+  -webkit-transition: all 0.3s;
+  float:left;
+}
+
+.flipped, .back {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg); 
+    
+}
+
+.front {
+  height: 400px;          
+  width: 700px;
+  position: absolute;    
+  text-align: center;   
+   -webkit-backface-visibility: hidden;     
+}
+
+
+.back {
+  height: 400px;          
+  width: 700px;
+  position: absolute;    
+  text-align: center;      
+   -webkit-backface-visibility: hidden;     
+}
+
+
+.front p {
+   margin-top: 10%;   
+  font-size: 3em;  
+}
+
+.back p {
+   margin-top: 10%;   
+  font-size: 3em;  
+}
+
+ .arrow {
+   margin-top: 15%;   
+   display: inline-block;
+   padding: 30px;
+   box-shadow: 8px 8px 0 2px #777 inset;
+   float:left;
+ }
+ .arrow.next {
+   margin-left: 2%;
+   margin-right: auto;
+   transform: rotate(135deg);
+ }
+ .arrow.prev { 
+   margin-right: 2%;
+   margin-left: 2%;     
+   transform: rotate(-45deg);
+     }
+ 
+ .arrow:hover {
+   box-shadow: 8px 8px 0 2px #000 inset
+ }
+   
