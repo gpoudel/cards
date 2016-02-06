@@ -1,0 +1,43 @@
+
+  body {
+  margin: 40px;
+  }
+
+.content {
+  margin-top: .5%;   
+  position: relative;  
+  width:100%;
+  height:98%; 
+  margin-bottom:2%;  
+  background-color: white;
+  float:left;
+  }
+
+.wrapper {
+  background-color: #fff;
+  color: #444;
+  height:600px;
+}
+
+
+.box {  
+  border-radius: 5px;
+  font-size: 150%;
+}
+
+
+.block {  
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  padding: 80px;
+  font-size: 150%; 
+  width:160px;
+  color: #fff;
+  background-color: #000;
+  float:left;
+}
+.block:hover { background-color: #fff;
+               color: #000;     
+               font-size:150%;       
+               }  
